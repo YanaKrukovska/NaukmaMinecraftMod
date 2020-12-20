@@ -1,7 +1,8 @@
 package com.ykrukovska.naukma.util;
 
 import com.ykrukovska.naukma.NaukmaMod;
-import com.ykrukovska.naukma.items.ItemBase;
+import com.ykrukovska.naukma.items.LvivskeChristmasBeer;
+import com.ykrukovska.naukma.items.TeterivCherryBeer;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -16,6 +17,7 @@ public class RegistryHandler {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
-    public static final RegistryObject<Item> LVIVSKE_CHRISTMAS_BEER = ITEMS.register("lvivske_rizdviane", ItemBase::create);
+    public static final RegistryObject<LvivskeChristmasBeer> LVIVSKE_CHRISTMAS_BEER = ITEMS.register("lvivske_rizdviane", LvivskeChristmasBeer::new);
+    public static final RegistryObject<TeterivCherryBeer> TETERIV_CHERRY_BEER = ITEMS.register("teteriv_cherry", TeterivCherryBeer::new);
 
 }
